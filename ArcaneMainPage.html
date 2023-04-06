@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcane Main Page</title>
+    <link href="ArcaneMainPage.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container1">
+        <!-- Navigation bar -->
+        <div class="navbar">
+            <div class="box1" onmouseover="changeNew()" onmouseleave="changeBack()" onclick="home()">
+                <span class="cube"></span>
+                <span class="cube"></span>
+                <span class="cube"></span>
+                <span class="cube"></span>
+            </div>
+            <div class="box2" onmouseover="changeImg2()" onmouseleave="changeImg2Back()">
+                <img id="userimg" src="icons8-user-100.png">
+            </div>
+        </div>
+
+        <!-- Media Section -->
+        <video id="trailer" poster="1192178.jpg" muted loop>
+            <source src="Arcane.mp4">
+        </video>
+
+        <div class="box3">
+            <img id="audiobtn" src="icons8-no-audio-dark-100.png">
+        </div>
+        <div class="box4">
+            <img id="videobtn" src="icons8-no-video-dark-100.png">
+        </div>
+
+        <div class="option">
+            <button onmouseover="increase()" onmouseleave="decrease()" onclick="webseries()">
+                <div id="circle" class="logo1">
+                    <img src="icons8-netflix-an-american-video-on-demand-service-100.png">
+                </div>
+                <div class="title">
+                    <h4>Watch</h4>
+                    <p>ON NETFLIX</p>
+                </div>
+            </button>
+
+            <div class="announcements">
+                <div class="anc1" onclick="webseries()">
+                    <div class="decor">
+                        <h5>ANNOUNCEMENTS</h5>
+                    </div>
+                    <img src="1194219.jpg">
+                </div>
+                <div class="anc2" onclick="theme()">
+                    <div class="decor">
+                        <h5>ANNOUNCEMENTS</h5>
+                    </div>
+                    <img src="enemyposter.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <!-- General Section -->
+        <div class="details">
+            <div class="about">
+                <h2>About</h2>
+            </div>
+            <div class="description">
+                <p>In the cities of Piltover and Zaun, unrest stirs as inventors and thieves,
+                    politicians and crime lords chafe against the constraints of a society torn
+                    asunder. Discovery and danger intertwine as heroes are born and bonds are
+                    broken. Will this power change the world, or lead it to ruin?
+                </p>
+            </div>
+            <div class="info">
+                <h4 id="site" onclick="arcane()">arcane.com</h4>
+                <h4 class="heading">CREATORS</h4>
+                <h4 class="ans">Riot Games<br>Fortiche</h4>
+                <h4 class="heading">PUBLISHER</h4>
+                <h4 class="ans">Netflix</h4>
+            </div>
+        </div>
+    </div>
+
+    <script src="ArcaneMainPage.js"></script>
+</body>
+
+</html>

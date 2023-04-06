@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of Legends</title>
+    <link href="LeagueofLegendsMainPage.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container1">
+        <!-- Navigation bar -->
+        <div class="navbar">
+            <div class="box1" onmouseover="changeNew()" onmouseleave="changeBack()" onclick="home()">
+                <span class="cube"></span>
+                <span class="cube"></span>
+                <span class="cube"></span>
+                <span class="cube"></span>
+            </div>
+            <div class="box2" onmouseover="changeImg2()" onmouseleave="changeImg2Back()">
+                <img id="userimg" src="icons8-user-100.png">
+            </div>
+        </div>
+
+        <!-- Media Section -->
+        <video id="trailer" poster="1605547.jpg" muted loop>
+            <source src="">
+        </video>
+
+        <div class="box4">
+            <img id="videobtn" src="icons8-no-video-dark-100.png">
+        </div>
+
+        <div class="option">
+            <button onmouseover="increase()" onmouseleave="decrease()" onclick="downloadsite()">
+                <div id="circle" class="logo1">
+                    <img src="icons8-downloading-updates-100.png">
+                </div>
+                <div class="title">
+                    <h4>Install</h4>
+                    <p>LEAGUE OF LEGENDS</p>
+                </div>
+            </button>
+
+            <div class="announcements">
+                <div class="anc1" onclick="promotion()">
+                    <div class="decor">
+                        <h5>GAME UPDATES</h5>
+                    </div>
+                    <img src="3320668.jpg">
+                </div>
+                <div class="anc2" onclick="patchNotes()">
+                    <div class="decor">
+                        <h5>GAME UPDATES</h5>
+                    </div>
+                    <img src="217097.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <!-- General Section -->
+        <div class="details">
+            <div class="about">
+                <h2>About</h2>
+            </div>
+            <div class="description">
+                <p>
+                    Showcase your skills in League of Legends: the definitive 5v5 MOBA that
+                    combines team synergy with individual mastery. Pick your role, perfect your
+                    build, and battle your way across the map to destroy the enemy Nexus. With
+                    over 150 champions and limitless ways to play, find your main and forge your
+                    path to victory.
+                </p>
+            </div>
+            <div class="info">
+                <h4 id="site" onclick="gamesite()">leagueoflegends.com</h4>
+                <h4 class="heading">DEVELOPERS</h4>
+                <h4 class="ans">Riot Games</h4>
+                <h4 class="heading">PUBLISHER</h4>
+                <h4 class="ans">Riot Games</h4>
+            </div>
+        </div>
+    </div>
+
+    <script src="LeagueofLegendsMainPage.js"></script>
+</body>
+
+</html>
